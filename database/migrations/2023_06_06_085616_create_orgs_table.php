@@ -15,7 +15,7 @@ return new class extends Migration
         Schema::create('orgs', function (Blueprint $table) {
             $table->id();
             $table->string('title', 50)->comment('單位名稱');
-            $table->integer('org_no')->comment('單位編號');
+            $table->string('org_no', 50)->comment('單位編號');
             $table->timestamps();
         });
 

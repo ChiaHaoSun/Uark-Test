@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\OrgsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,7 @@ Route::get('', function () {
 //登入
 Route::get('/login', [LoginController::class, 'login']);
 Route::post('/doLogin', [LoginController::class, 'doLogin']);
+
+//建立單位
+Route::get('/orgs', [OrgsController::class, 'orgs']);
+Route::post('/doOrgs', [OrgsController::class, 'doOrgs']);
