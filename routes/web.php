@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\OrgsController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,7 @@ Route::post('/doLogin', [LoginController::class, 'doLogin']);
 //建立單位
 Route::get('/orgs', [OrgsController::class, 'orgs']);
 Route::post('/doOrgs', [OrgsController::class, 'doOrgs']);
+
+//建立帳號
+Route::get('/register', [RegisterController::class, 'register']);
+Route::post('/doRegister', [RegisterController::class, 'doRegister']);

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('email', 255)->comment('email');
             $table->string('account', 255)->comment('帳號');
             $table->string('password', 255)->comment('密碼');
-            $table->string('status', 2)->comment('審核狀態');
+            $table->integer('status')->comment('審核狀態');
             $table->timestamps();
         });
 
